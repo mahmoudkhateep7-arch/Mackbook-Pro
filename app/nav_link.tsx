@@ -41,12 +41,11 @@ export default function Nav_link_C({ idx, textColor, label, bg, borders }: {
   }
   const onLeave = () => {
     if (tlRef.current) {
-      console.log(44444444)
       tlRef.current.reverse()
     }
   }
   return (
-    <a onMouseLeave={onLeave} onMouseEnter={onHover} className={`relative ${idx == navLinks.length - 1 ? 'max-[400px]:hidden' : ''}`} href={`#${label}`}>
+    <a onMouseLeave={onLeave} onMouseEnter={onHover} className={`relative ${label == 'Vision' ? 'hidden sm:block' : 'block'} ${idx == navLinks.length - 1 ? 'max-[400px]:hidden' : ''}`} href={`#${label}`}>
       <span className={`relative z-3 px-2`}>{label}</span>
       <span id={`bg_color_id_${label}`} className={`absolute bg-[#333]   h-0 bottom-0 left-0 w-full right-0`}></span>
     </a>

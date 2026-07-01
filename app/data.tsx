@@ -13,13 +13,7 @@ const navLinks = [
     borders: { top: "3px solid #ff8a80", right: "1px solid #ff8a80", bottom: "3px solid #b71c1c", left: "1px solid #ff8a80" }
 
   },
-  {
-    label: "iPhone",
 
-    bg: "#b71c1c", // Dark Red
-    textColor: "#ffffff", // White text for contrast
-    borders: { top: "3px solid #ff8a80", right: "1px solid #ff8a80", bottom: "3px solid #b71c1c", left: "1px solid #ff8a80" }
-  },
   {
     bg: "#b71c1c", // Dark Red
     textColor: "#ffffff", // White text for contrast
@@ -33,12 +27,7 @@ const navLinks = [
     textColor: "#ffffff", // White text for contrast
     borders: { top: "3px solid #ff8a80", right: "1px solid #ff8a80", bottom: "3px solid #b71c1c", left: "1px solid #ff8a80" }
   },
-  {
-    label: "AirPods",
-    bg: "#b71c1c", // Dark Red
-    textColor: "#ffffff", // White text for contrast
-    borders: { top: "3px solid #ff8a80", right: "1px solid #ff8a80", bottom: "3px solid #b71c1c", left: "1px solid #ff8a80" }
-  },
+
 ];
 
 const noChangeParts = [
@@ -61,52 +50,54 @@ const noChangeParts = [
 ];
 
 const performanceImages = [
-  { id: "p1", src: "/performance1.png" },
-  { id: "p2", src: "/performance2.png" },
-  { id: "p3", src: "/performance3.png" },
-  { id: "p4", src: "/performance4.png" },
-  { id: "p5", src: "/performance5.jpg" },
-  { id: "p6", src: "/performance6.png" },
-  { id: "p7", src: "/performance7.png" },
+  { id: "p1", src: "/performance1.png", tl_style: 'left-5 top-15' },
+  { id: "p2", src: "/performance2.png", tl_style: 'left-10 top-20' },
+  { id: "p3", src: "/performance3.png", tl_style: '-left-5 bottom-30' },
+  { id: "p4", src: "/performance4.png", tl_style: 'right-5 bottom-30' },
+  { id: "p5", src: "/performance5.jpg", tl_style: 'bottom-0 top-0' },
+  { id: "p6", src: "/performance6.png", tl_style: 'left-5 top-50' },
+  { id: "p7", src: "/performance7.png", tl_style: 'right-25 top-40' },
 ];
+
 
 const performanceImgPositions = [
   {
     id: "p1",
-    left: 5,
-    bottom: 65,
+    left: "-90.0%",  // Angle: 0°
+    bottom: "50.0%",
   },
   {
     id: "p2",
-    right: 10,
-    bottom: 60,
+    left: "-74.7%",  // Angle: ~51.4°
+    bottom: "-81.3%",
   },
   {
     id: "p3",
-    right: -5,
-    bottom: 45,
+    left: "33.1%",  // Angle: ~102.9°
+    bottom: "89.0%",
   },
   {
     id: "p4",
-    right: -10,
-    bottom: 0,
+    left: "40%",  // Angle: ~154.3°
+    bottom: "-100%",
   },
   {
     id: "p5",
-    left: 20,
-    bottom: 50,
+    left: "0%",  // Angle: ~205.7°
+    bottom: "0%",
   },
   {
     id: "p6",
-    left: 2,
-    bottom: 30,
+    left: "-100%",  // Angle: ~257.1°
+    bottom: "50%",
   },
   {
     id: "p7",
-    left: -5,
-    bottom: 0,
+    left: "100%",  // Angle: ~308.6°
+    bottom: "50%",
   },
 ];
+
 
 const features = [
   {

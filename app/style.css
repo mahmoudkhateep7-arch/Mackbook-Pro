@@ -8,3 +8,15 @@ body {
 a:focus {
   outline: none;
 }
+
+@theme {
+  --color-reddd: #b71c1c;
+}
+
+#colored_border {
+  background-image: linear-gradient(to right,
+      rgb(229, 210, 210) 0%,
+      rgb(163, 237, 16) 30%,
+      rgb(238, 14, 14) 70%,
+      rgb(175, 207, 175) 100%);
+}

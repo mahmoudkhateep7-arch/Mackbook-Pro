@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 export default function RoorLayout({ children }: React.PropsWithChildren) {
   return (
     <html lang={'en'}>
-      <body>{children}</body>
+      <body className={`overflow-x-clip`}>{children}</body>
     </html>
   )
 }
