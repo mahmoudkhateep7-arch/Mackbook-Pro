@@ -40,7 +40,7 @@ export default function Hero_C() {
        pt-30 sm:pt-30 md:pt-25 lg:pt-20   
        text-white bg-black `}>
       <div
-        className={`max-w-7xl mx-auto pb-40 sm:pb-25 md:pb-20 lg:pb-15 px-3`}>
+        className={`max-w-7xl mx-auto pb-40  px-3`}>
         <h3 className={`text-3xl text-center pt-20 sm:pt-5 pb-4  font-semibold`}>MacBook Pro</h3>
         <div className={`flex justify-center pt-4`}>
           <Image className={`w-80  sm:w-100 md:w-110 lg:w-120`} unoptimized={true} priority={true} alt={'apple titlw'} src={apple_title} width={500} height={300} />

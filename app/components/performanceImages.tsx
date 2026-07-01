@@ -30,8 +30,8 @@ export default function PerformanceImages_C() {
         scrub: true,
       }
     })
-    gsap.fromTo('#title_id', { opacity: 0, y: 100 }, {
-      y: 0, opacity: 1, scrollTrigger: {
+    gsap.fromTo('#title_id', { opacity: 0, }, {
+      opacity: 1, scrollTrigger: {
         trigger: '#title_id',
         start: "center bottom",
         end: '150px',
@@ -41,10 +41,13 @@ export default function PerformanceImages_C() {
 
   }, [])
   return (
-    <div style={{ scrollMarginTop: '100px' }} id={`Watch`} className={`text-white hidden sm:block sm:px-10 px-4`}>
+    <div style={{ scrollMarginTop: '100px' }} id={`Watch`} className={`text-white hidden py-10   sm:block sm:px-10 px-4`}>
+      <h3 id={`title_id`} className={`lg:text-6xl backdrop-blur-2xl relative 
+        z-12 md:text-4xl text-2xl px-10 sm:px-5 md:px-2
+           lg:px-0 lg:w-2/3 mx-auto lg:-translate-y-30  font-semibold text-center`}>Next-level graphics performance. Game on.
+      </h3>
       <div className={`max-w-7xl overflow-hidden   mx-auto py-10 `}>
-        <h3 id={`title_id`} className={`lg:text-6xl backdrop-blur-2xl relative z-12 md:text-4xl text-2xl px-10 sm:px-5 md:px-2 lg:px-0 lg:w-2/3 mx-auto  font-semibold text-center`}>Next-level graphics performance. Game on.
-        </h3>
+
         <div className={`h-40`}></div>
         <div id={`images_parent`} className={`relative  sm:h-100 sm:w-100 h-80 w-80 mx-auto  `}>
           {performanceImages.map(({ id, src, tl_style }) => {

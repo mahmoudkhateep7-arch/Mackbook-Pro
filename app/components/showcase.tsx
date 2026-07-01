@@ -58,7 +58,7 @@ export default function Showcase() {
 
       </div>
 
-      <div className={`  mx-auto relative lg:-translate-y-40 max-w-4xl `}>
+      <div className={`  mx-auto relative lg:-translate-y-40  max-w-4xl `}>
         <div className={`grid  md:grid-cols-2 lg:grid-cols-3 lg:px-10 px-3 py-10 gap-10`}>
           <div id={`grid_1`} className={`flex flex-col gap-3 col-span-1 lg:col-span-2`}>
             <h3 className={`lg:text-7xl md:text-4xl sm:text-3xl text-xl font-semibold`}>Rocket Chip</h3>
